@@ -1,4 +1,4 @@
-# tweet-my-likes
+# Tweet My Likes - an Azure function that randomly shares tweets you've liked in the past 
 
 The idea with this function is that you can put your twitter account on auto pilot. It will take a variable number of tweets you've liked in the past, select one at random, and then share it as a new tweet. This function simply uses a timer trigger to tweet a random "like" every 4 hours.
 
