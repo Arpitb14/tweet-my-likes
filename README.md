@@ -6,7 +6,7 @@ The idea with this function is that you can put your twitter account on auto pil
 2. Make sure your twitter app has read/write access to your twitter account
 3. Take the values for the consumer key, access token, and access token secret from your twitter app and add them as "App Setting" key/value pairs within the Application Settings of your function app, like so:
 
-![alt text](https://cloud.githubusercontent.com/assets/5126491/26689333/2cb74660-46aa-11e7-8a4d-71dae05dca7e.png "README Image")
+![alt text](https://cloud.githubusercontent.com/assets/5126491/26689481/9e4219a4-46aa-11e7-888a-355a0a6cb9b1.png "README Image")
 
 4. Update run.csx with your own twitter screen name on line 16
 5. Update the cron schedule in function.json if you want to change how ofter your function runs
