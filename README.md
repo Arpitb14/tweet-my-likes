@@ -10,7 +10,7 @@ You can setup this function and hit "like" on new and interesting tweets every d
 
 ![alt text](https://cloud.githubusercontent.com/assets/5126491/26689481/9e4219a4-46aa-11e7-888a-355a0a6cb9b1.png "README Image")
 
-4. Update run.csx with your own twitter screen name on line 16
+4. Update run.csx with your own twitter screen name on line 9
 5. Update the cron schedule in function.json if you want to change how ofter your function runs
 
 Note: by default, this function will take your last 20 likes and pick one at random to tweet when the function runs. You can change this in the run.csx file.
