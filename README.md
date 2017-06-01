@@ -6,7 +6,7 @@ You can setup this function and hit "like" on new and interesting tweets every d
 
 1. You'll need to create your own twitter app at https://apps.twitter.com/
 2. Make sure your twitter app has read/write access to your twitter account
-3. Take the values for the consumer key, access token, and access token secret from your twitter app and add them as "App Setting" key/value pairs within the Application Settings of your function app, like so:
+3. Take the values for the consumer key, consumer secret, access token, and access token secret from your twitter app and add them as "App Setting" key/value pairs within the Application Settings of your function app, like so:
 
 ![alt text](https://cloud.githubusercontent.com/assets/5126491/26689481/9e4219a4-46aa-11e7-888a-355a0a6cb9b1.png "README Image")
 
