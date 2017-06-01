@@ -2,18 +2,19 @@ using System;
 using System.Configuration;
 using TweetSharp;
 
+static string _consumerKey = ConfigurationManager.AppSettings["ConsumerKey"];
+static string _consumerSecret = ConfigurationManager.AppSettings["ConsumerSecret"];
+static string _accessToken = ConfigurationManager.AppSettings["AccessToken"];
+static string _accessTokenSecret = ConfigurationManager.AppSettings["AccessTokenSecret"];
+static string _screenName = "<your twitter handle>";
+
 public static void Run(TimerInfo myTimer, TraceWriter log)
 {
-    var _consumerKey = ConfigurationManager.AppSettings["ConsumerKey"];
-    var _consumerSecret = ConfigurationManager.AppSettings["ConsumerSecret"];
-    var _accessToken = ConfigurationManager.AppSettings["AccessToken"];
-    var _accessTokenSecret = ConfigurationManager.AppSettings["AccessTokenSecret"];
-
     var service = new TwitterService(_consumerKey, _consumerSecret);
     service.AuthenticateWith(_accessToken, _accessTokenSecret);
 		
     var gettweet = service.ListFavoriteTweets(
-        new ListFavoriteTweetsOptions { ScreenName = "<your twitter handle>" }
+        new ListFavoriteTweetsOptions { ScreenName = _screenName }
     );
 
     var rand = new Random();
