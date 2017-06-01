@@ -2,6 +2,8 @@
 
 The idea with this function is that you can put your twitter account on auto pilot. It will take a variable number of tweets you've liked in the past, select one at random, and then share it as a new tweet. This function simply uses a timer trigger to tweet a random "like" every 4 hours.
 
+You can setup this function and hit "like" on new and interesting tweets every day. You'll randomly tweet them out later on autopilot.
+
 1. You'll need to create your own twitter app at https://apps.twitter.com/
 2. Make sure your twitter app has read/write access to your twitter account
 3. Take the values for the consumer key, access token, and access token secret from your twitter app and add them as "App Setting" key/value pairs within the Application Settings of your function app, like so:
