@@ -18,7 +18,7 @@ public static void Run(TimerInfo myTimer, TraceWriter log)
     );
 
     var rand = new Random();
-    var tweetId = rand.Next(0, 21);
+    var tweetId = rand.Next(1, 21);
 
     var tweet = (from t in gettweet select t.Text).Take(20);
     var status = tweet.ToArray()[tweetId].ToString();
